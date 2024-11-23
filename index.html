@@ -51,7 +51,7 @@
       <a href="/admin/students.html" class="nav-link">Students</a>
       <a href="/admin/courses.html" class="nav-link">Courses</a>
       <a href="/admin/profile.html" class="nav-link">Profile</a>
-      <a href="/admin/signOut.html" class="nav-link text-danger">Sign Out</a>
+      <a href="#" class="nav-link text-danger" data-bs-toggle="modal" data-bs-target="#signOutModal">Sign Out</a>
     </nav>
   </div>
 
@@ -74,7 +74,8 @@
               <td>Java Programming</td>
               <td>
                 <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-success">View</button>
+                <!-- <button type="button" class="btn btn-success">View</button> -->
+                <a href="/admin/student.html" class="btn btn-success">View</a>
                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
               </td>
             </tr>
@@ -83,7 +84,8 @@
               <td>Database Development</td>
               <td>
                 <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-success">View</button>
+                <!-- <button type="button" class="btn btn-success">View</button> -->
+                <a href="/admin/student.html" class="btn btn-success">View</a>
                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
               </td>
             </tr>
@@ -92,7 +94,8 @@
               <td>Web Development</td>
               <td>
                 <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-success">View</button>
+                <!-- <button type="button" class="btn btn-success">View</button> -->
+                <a href="/admin/student.html" class="btn btn-success">View</a>
                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
               </td>
             </tr>
@@ -117,6 +120,27 @@
       </div>
     </div>
   </div>
+
+  <!-- signOut Modal -->
+  <div class="modal fade" id="signOutModal" tabindex="-1" aria-labelledby="signOutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signOutModalLabel">Confirm Sign Out</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Are you sure you want to sign out?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+          <a href="/admin/signOut.html" class="btn btn-danger">Yes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
