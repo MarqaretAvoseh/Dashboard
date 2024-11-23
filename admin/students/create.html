@@ -52,9 +52,10 @@
   <div class="sidebar d-none d-md-block">
     <h4 class="text-center text-white">Student Dashboard</h4>
     <nav class="nav flex-column px-3">
-      <a href="#courses" class="nav-link">Courses</a>
-      <a href="#profile" class="nav-link">Profile</a>
-      <a href="#signout" class="nav-link text-danger">Sign Out</a>
+      <a href="/admin/students.html" class="nav-link">Students</a>
+      <a href="/admin/courses.html" class="nav-link">Courses</a>
+      <a href="/admin/profile.html" class="nav-link">Profile</a>
+      <a href="/admin/signOut.html" class="nav-link text-danger">Sign Out</a>
     </nav>
   </div>
 
@@ -63,47 +64,40 @@
     <div class="row mt-5">
       <div class="col-12">
         <h3 class="text-center">ADMIN DASHBOARD</h3>
-        <div class="container mt-5 border p-4 rounded thick-border">
+        <div class="container mt-5 border p-4 rounded thick-border ">
           <h3 class="text-center mb-4">CREATE STUDENTS</h3>
           <form>
             <!-- Name Field -->
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Name:</label>
-              <div class="col-sm-10">
-                <p class="form-control-plaintext">...................................................................................</p>
-              </div>
+            <div class="mb-3 d-flex align-items-center">
+              <label for="name" class="m-3">Name:</label>
+              <input type="text" class="form-control w-50 border-0 border-bottom" id="name"/>
             </div>
 
             <!-- Email Field -->
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Email:</label>
-              <div class="col-sm-10">
-                <p class="form-control-plaintext">...................................................................................</p>
-              </div>
+            <div class="mb-3 d-flex align-items-center">
+              <label for="email" class="m-3">Email:</label>
+              <input type="text" class="form-control w-50 border-0 border-bottom" id="email"/>
             </div>
 
+
             <!-- Phone Field -->
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Phone:</label>
-              <div class="col-sm-10">
-                <p class="form-control-plaintext">...................................................................................</p>
-              </div>
+            
+            <div class="mb-3 d-flex align-items-center">
+              <label for="Phone" class="m-3">Phone Number:</label>
+              <input type="tel" class="form-control w-50 border-0 border-bottom" id="Phone"/>
             </div>
 
             <!-- Password Field -->
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Password:</label>
-              <div class="col-sm-10">
-                <p class="form-control-plaintext">...................................................................................</p>
-              </div>
+            
+            <div class="mb-3 d-flex align-items-center">
+              <label for="password" class="m-3">Password:</label>
+              <input type="password" class="form-control w-50 border-0 border-bottom" id="password"/>
             </div>
 
             <!-- Subject Field -->
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Subject:</label>
-              <div class="col-sm-10">
-                <p class="form-control-plaintext">...................................................................................</p>
-              </div>
+            <div class="mb-3 d-flex align-items-center">
+              <label for="Subject" class="m-3">Subject:</label>
+              <input type="text" class="form-control w-50 border-0 border-bottom" id="Subject"/>
             </div>
 
             <!-- Create Button -->

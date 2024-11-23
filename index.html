@@ -34,9 +34,7 @@
     /* Responsive layout for smaller screens */
     @media (max-width: 768px) {
       .sidebar {
-        width: 100%; /* Take full width on smaller screens */
-        height: auto;
-        position: relative;
+        display: none;
       }
       .content {
         margin-left: 0;
@@ -50,51 +48,56 @@
   <div class="sidebar d-none d-md-block">
     <!-- <h4 class="text-center text-white">Student Dashboard</h4> -->
     <nav class="nav flex-column px-3">
-      <a href="#courses" class="nav-link">Students</a>
-      <a href="#courses" class="nav-link">Courses</a>
-      <a href="#profile" class="nav-link">Profile</a>
-      <a href="#signout" class="nav-link text-danger">Sign Out</a>
+      <a href="/admin/students.html" class="nav-link">Students</a>
+      <a href="/admin/courses.html" class="nav-link">Courses</a>
+      <a href="/admin/profile.html" class="nav-link">Profile</a>
+      <a href="/admin/signOut.html" class="nav-link text-danger">Sign Out</a>
     </nav>
   </div>
 
-  <!-- Admin Table Content -->
+  <!-- Main Content -->
   <div class="content">
     <div class="row mt-5">
       <div class="col-12">
         <h3 class="text-center">ADMIN DASHBOARD</h3>
-        <h5 class="text-center">STUDENTS ENROLLED FOR JAVA PROGRAMMING</h5>
         <table class="table table-responsive table-hover">
           <thead>
             <tr>
               <th scope="col">S/N</th>
-              <th scope="col">Students</th>
+              <th scope="col">Subjects</th>
               <th scope="col">Actions</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>John Doe</td>
+              <td>Java Programming</td>
               <td>
-                <button type="button" class="btn btn-success">Edit</button>
+                <button type="button" class="btn btn-primary">Edit</button>
+                <button type="button" class="btn btn-success">View</button>
                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
               </td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>Timilehin Josh</td>
+              <td>Database Development</td>
               <td>
-                <button type="button" class="btn btn-success">Edit</button>
+                <button type="button" class="btn btn-primary">Edit</button>
+                <button type="button" class="btn btn-success">View</button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Web Development</td>
+              <td>
+                <button type="button" class="btn btn-primary">Edit</button>
+                <button type="button" class="btn btn-success">View</button>
                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
               </td>
             </tr>
           </tbody>
         </table>
-
-        <!-- Enroll Button -->
-        <div class="d-flex justify-content-end">
-          <button type="button" class="btn btn-secondary btn-sm">ENROLL STUDENT</button>
-        </div>
       </div>
     </div>
   </div>

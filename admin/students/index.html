@@ -34,9 +34,7 @@
     /* Responsive layout for smaller screens */
     @media (max-width: 768px) {
       .sidebar {
-        width: 100%; /* Take full width on smaller screens */
-        height: auto;
-        position: relative;
+        display: none;
       }
       .content {
         margin-left: 0;
@@ -57,44 +55,62 @@
     </nav>
   </div>
 
-  <!-- Admin Table Content -->
+  <!-- Main Content -->
   <div class="content">
     <div class="row mt-5">
       <div class="col-12">
-        <h3 class="text-center">STUDENT DASHBOARD</h3>
-        <h5 class="text-center">Java Programming</h5>
+        <h3 class="text-center">ADMIN DASHBOARD</h3>
+        <h3 class="text-center">ALL STUDENTS</h3>
+        <button type="button" class="btn btn-success float-end">CREATE STUDENT</button>
         <table class="table table-responsive table-hover">
           <thead>
             <tr>
               <th scope="col">S/N</th>
-              <th scope="col">Topics</th>
-              <th scope="col">Date</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Phone</th>
+              <th scope="col">Actions</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>Introduction to variables</td>
+              <td>John Doe</td>
+              <td>id@test.io</td>
+              <td>+ 12 90</td>
               <td>
-                <h4>3rd - 7th Nov., 2024</h4>
+                <!-- <button type="button" class="btn btn-primary">Edit</button> -->
+                <button type="button" class="btn btn-success">View</button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
               </td>
             </tr>
             <tr>
                 <th scope="row">2</th>
-                <td>Conditional Statements</td>
-                <td>
-                  <h4>10th - 14th Nov., 2024</h4>
-                </td>
-              </tr>
-              <tr>
+                <td>Timilehin Josh</td>
+                <td>tj@test.io</td>
+                <td>+ 12 92</td>
+              <td>
+                <!-- <button type="button" class="btn btn-primary">Edit</button> -->
+                <button type="button" class="btn btn-success">View</button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
+              </td>
+            </tr>
+            <tr>
                 <th scope="row">3</th>
-                <td>OOP Concepts</td>
-                <td>
-                  <h4>17th - 18th Nov., 2024</h4>
-                </td>
-              </tr>
+                <td>Kyle Walker</td>
+                <td>w@test.io</td>
+                <td>+ 12 95</td>
+              <td>
+                <!-- <button type="button" class="btn btn-primary">Edit</button> -->
+                <button type="button" class="btn btn-success">View</button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
+              </td>
+            </tr>
           </tbody>
         </table>
+      </div>
+    </div>
+  </div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
